@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b11ca78e7e7348eb8b166e49634a853e" Name="Diagram1">
+        <EntityTypeShape EntityType="Empresarios20Model.ConsClaseArtConEscandallo" Width="1.5" PointX="17.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.ConsPedidoArt" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.dtproperties" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesActividades" Width="1.5" PointX="6.5" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesAnulaciones" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesAnulacionTipo" Width="1.5" PointX="12.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArqueo" Width="1.5" PointX="15.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArqueoDetalle" Width="1.5" PointX="18" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArticulo" Width="1.5" PointX="3" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArticuloClase" Width="1.5" PointX="0.75" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.GesArticuloClaseConEscandallo" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArticuloFamilia" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesArticuloGrupo" Width="1.5" PointX="1.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesCaja" Width="1.5" PointX="12.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesCatalogo" Width="1.5" PointX="8.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesClaseCliente" Width="1.5" PointX="7.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesCliente" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesCobro" Width="1.5" PointX="17.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesCola" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesDispositivo" Width="1.5" PointX="6.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesEmpaquetado" Width="1.5" PointX="6" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesEnvase" Width="1.5" PointX="0.75" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesEscandallo" Width="1.5" PointX="19.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesEscandallo_Num" Width="1.5" PointX="6" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesEstatus" Width="1.5" PointX="8.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFacTique" Width="1.5" PointX="15.5" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFacTique_Num" Width="1.5" PointX="15.5" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFactura" Width="1.5" PointX="13.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFamilia" Width="1.5" PointX="11" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFichaje" Width="1.5" PointX="19.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFormaPagoPedidos" Width="1.5" PointX="0.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesFormatoPedido" Width="1.5" PointX="6" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesGrupo" Width="1.5" PointX="8.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesGrupoCompra" Width="1.5" PointX="0.75" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesHistoricoFactura" Width="1.5" PointX="13.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesListaCompra" Width="1.5" PointX="10.5" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesLocal" Width="1.5" PointX="6.5" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesMagnitud" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesMesa" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPagoForma" Width="1.5" PointX="20.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPedido" Width="1.5" PointX="3" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPedidoDetalle" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPeriodos" Width="1.5" PointX="11" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPersona" Width="1.5" PointX="19.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPoblacion" Width="1.5" PointX="21.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPreparacionesArticuloClase" Width="1.5" PointX="21.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesPreparacionPlatos" Width="1.5" PointX="21.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesProducto" Width="1.5" PointX="21.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesProducto_Num" Width="1.5" PointX="13.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesProveedores" Width="1.5" PointX="0.75" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesReservas" Width="1.5" PointX="21.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesSectorPedido" Width="1.5" PointX="0.75" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesSeguridad" Width="1.5" PointX="8.75" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesTipoPedido" Width="1.5" PointX="0.75" PointY="34.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesTrabajador" Width="1.5" PointX="11" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.gesZonas" Width="1.5" PointX="8.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.TotalArqueo" Width="1.5" PointX="7.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Empresarios20Model.TotalDetalleArqueo" Width="1.5" PointX="10" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="Empresarios20Model.FK_ConsPedidoArt_gesArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesActividades" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesZonas_gesActividades" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArqueoDetalle_gesArqueo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesArticuloClase" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesArticuloFamilia" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesEnvase" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesGrupoCompra" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesMagnitud" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticulo_gesSectorPedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesCatalogo_gesArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesPedidoDetalle_gesArticulo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_GesArticuloClaseConEscandallo_gesArticuloClase" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesEscandallo_Num_gesArticuloClase" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesArticuloFamilia_gesArticuloGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesCatalogo_gesEmpaquetado" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesCatalogo_gesFormatoPedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesCatalogo_gesProveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesListaCompra_gesCatalogo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesDispositivo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesZonas_gesDispositivo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesEscandallo_Num_gesMagnitud" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesTrabajador_gesEstatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_gesFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesHistoricoFactura" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesProducto_Num" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFacTique_Num_gesTrabajador" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFactura_gesLocal" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFactura_gesPeriodos" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFactura_gesTrabajador" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFamilia_gesGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesFamilia_gesZonas" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesProducto_Num_gesFamilia" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesPedido_gesFormaPagoPedidos" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesProducto_Num_gesGrupo" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesHistoricoFactura_gesPeriodos" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesZonas_gesLocal" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesPedido_gesProveedores" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesPedido_gesTipoPedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesPedidoDetalle_gesPedido" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_gesTrabajador_gesSeguridad" ManuallyRouted="false" />
+        <AssociationConnector Association="Empresarios20Model.FK_TotalDetalleArqueo_TotalArqueo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

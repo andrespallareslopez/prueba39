@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[gesListaCompra] (
+    [CodListaPedido]             UNIQUEIDENTIFIER CONSTRAINT [DF_gesListaCompra_CodListaPedido] DEFAULT (newid()) NOT NULL,
+    [CodCatalogo]                INT              NULL,
+    [CodTrabajadorCrea]          INT              NULL,
+    [CodTrabajadorModifica]      INT              NULL,
+    [FechaAlta]                  DATETIME         NULL,
+    [FechaModificacion]          DATETIME         NULL,
+    [NumeroPedido]               INT              NULL,
+    [SeleccionadoPedir]          BIT              NULL,
+    [PedidoUnidades]             DECIMAL (18, 4)  NULL,
+    [PedidoFormato]              VARCHAR (100)    NULL,
+    [PedidoPrecio]               DECIMAL (18, 4)  NULL,
+    [RealUnidades]               DECIMAL (18, 4)  NULL,
+    [RealTextoUnidades]          VARCHAR (100)    NULL,
+    [RealCajas]                  DECIMAL (18, 4)  NULL,
+    [RealTextoCajas]             VARCHAR (100)    NULL,
+    [RealPrecioUnidad]           DECIMAL (18, 4)  NULL,
+    [RealPrecioCaja]             DECIMAL (18, 4)  NULL,
+    [RealImporte]                DECIMAL (18, 4)  NULL,
+    [RealObservaciones]          VARCHAR (100)    NULL,
+    [RealObservacionesGenerales] NVARCHAR (200)   NULL,
+    CONSTRAINT [PK_gesListaCompra] PRIMARY KEY CLUSTERED ([CodListaPedido] ASC),
+    CONSTRAINT [FK_gesListaCompra_gesCatalogo] FOREIGN KEY ([CodCatalogo]) REFERENCES [dbo].[gesCatalogo] ([CodCatalogo])
+);
+

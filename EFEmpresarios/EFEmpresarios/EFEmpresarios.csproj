@@ -1,0 +1,860 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA76842B-9934-40B0-85C9-C0A760BF6204}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EFEmpresarios</RootNamespace>
+    <AssemblyName>EFEmpresarios</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'local|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\local\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0-preview2-19525-03\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.0-preview2-19525-03\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsClaseArtConEscandallo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ConsPedidoArt.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dtproperties.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dt_getpropertiesbyid_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="dt_getpropertiesbyid_u_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFEmpresarios.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFEmpresarios.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFEmpresarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EFEmpresarios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EFEmpresarios.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="gesActividades.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesAnulaciones.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesAnulacionTipo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArqueo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArqueoDetalle.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArticulo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArticuloClase.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GesArticuloClaseConEscandallo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArticuloFamilia.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesArticuloGrupo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesCaja.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesCatalogo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesClaseCliente.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesCliente.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesCobro.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesCola.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesDispositivo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesEmpaquetado.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesEnvase.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesEscandallo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesEscandallo_Num.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesEstatus.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFacTique.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFacTique_Num.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFactura.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFamilia.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFichaje.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFormaPagoPedidos.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesFormatoPedido.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesGrupo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesGrupoCompra.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesHistoricoFactura.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesListaCompra.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesLocal.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesMagnitud.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesMesa.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPagoForma.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPedido.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPedidoDetalle.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPeriodos.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPersona.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPoblacion.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPreparacionesArticuloClase.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesPreparacionPlatos.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesProducto.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesProducto_Num.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesProveedores.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesReservas.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesSectorPedido.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesSeguridad.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesTipoPedido.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesTrabajador.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="gesZonas.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="getClaseArticulo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="obtenergrupos_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Arqueo_informe_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Arqueo_permiso_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Compra_entrada_almacen_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_factura_en_uso_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Factura_se_detecto_abierta_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_FechaFactique_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_FechaFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Fichaje_del_empleado_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Fichaje_euros_hora_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_movimiento_de_platos_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Pedido_Total_al_proveedor_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_Periodo_de_venta_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_purgar_cola_impresion_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesActividadesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesActividadesPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesActividade_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacionesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacionesPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacione_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacionTiposAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacionTiposPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesAnulacionTipo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArqueoDetallesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArqueoDetallesByCodArqueo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArqueoDetalle_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArqueosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArqueo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectGesArticuloClaseConEscandallosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectGesArticuloClaseConEscandallosByCodClasePadre_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectGesArticuloClaseConEscandallosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectGesArticuloClaseConEscandallo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloClasesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloClasesPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloClase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloFamiliasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloFamiliasByCodGrupo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloFamiliasPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloFamilia_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloGruposAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloGruposPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticuloGrupo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodClase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodEnvase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodFamilia_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodGrupoCompra_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodGrupo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodMagnitud_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosByCodSectorPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesArticulo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCajasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCaja_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosByCodArticulo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosByCodEmpaquetado_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosByCodFormatoPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosByCodProveedor_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCatalogo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesClaseClientesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesClaseCliente_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesClientesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesClientesByCodClase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCliente_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCobrosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCobro_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesColasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesColasByCodFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesCola_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesDispositivosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesDispositivo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEnvasesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEnvase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallosByCodClase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallosByCodMagnitud_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallosByCodProducto_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_NumsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_NumsByCodClase_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_NumsByCodMagnitud_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_NumsByCodProducto_Num_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_NumsPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_Num_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEscandallo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEstatusAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesEstatu_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTiquesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTiquesByCodFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTiquesByFecha_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodActividad_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodDispositivo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodProducto_Num_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodProducto_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndCodTrabajador_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_NumsByAndFechaNegocio_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_Num_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacTique_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacturasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacturasByAndCodLocal_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacturasByAndCodPeriodo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacturasByAndCodTrabajador_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFacturasPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFamiliasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFamiliasByCodGrupo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFamiliasByCodZona_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFamiliasPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFamilia_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFichajesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesFichaje_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesGruposAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesGruposPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesGrupo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesLocalsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesLocal_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesMagnitudsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesMagnitud_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesMesasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesMesa_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPagoFormasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPagoForma_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetallesAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetallesByCodArticulo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetallesByCodPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetallesByPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetallesPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidoDetalle_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByAlbaran_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByCodFormaPago_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByCodProveedor_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByCodTipoPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByCodTrabajador_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosByFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedidosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPedido_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPeriodosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPeriodo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPoblacionsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesPoblacion_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProductosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProductosPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProducto_NumsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProducto_NumsByCodFamilia_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProducto_NumsPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProducto_Num_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProducto_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProveedoresAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProveedoresPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesProveedore_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesReservasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesReserva_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesSeguridadsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesSeguridad_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajadorsAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajadorsByAndCodEstatus_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajadorsByAndCodSeguridad_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajadorsByClave_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajadorsPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesTrabajador_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZonasAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZonasByCodActividad_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZonasByCodDispositivo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZonasByCodLocal_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZonasPaged_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectgesZona_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalArqueosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalArqueosByFecha_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalArqueo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalDetalleArqueosAll_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalDetalleArqueosByCodigo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalDetalleArqueosByFecha_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_SelectTotalDetalleArqueo_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_tipo_impresora_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_UltimaFechaFactique_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pa_UltimaFechaFactura_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sp_helpdiagrams_Result.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagrams.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalArqueo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TotalDetalleArqueo.cs">
+      <DependentUpon>EFEmpresarios.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="EFEmpresarios.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EFEmpresarios.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="App.config.local.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="EFEmpresarios.edmx.diagram">
+      <DependentUpon>EFEmpresarios.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EFEmpresarios.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>EFEmpresarios.Context.cs</LastGenOutput>
+      <DependentUpon>EFEmpresarios.edmx</DependentUpon>
+    </Content>
+    <Content Include="EFEmpresarios.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EFEmpresarios.edmx</DependentUpon>
+      <LastGenOutput>EFEmpresarios.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.0-preview2-19525-03\build\EntityFramework.targets')" />
+</Project>

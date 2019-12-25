@@ -1,0 +1,86 @@
+09/11/2019 13:36:37	Este registro contiene información acerca de la operación de importación de esquema en el proyecto 'DatabaseEmpresarios' del equipo 'DESKTOP-TS4P9AI' por el usuario 'andrespallareslopez'.
+09/11/2019 13:36:41	Se inició la importación del esquema de la base de datos.
+09/11/2019 13:36:46	Recopilando credenciales de la base de datos
+09/11/2019 13:36:46	Recopilando opciones de base de datos
+09/11/2019 13:36:46	Recopilando la opción de configuración de ámbito de la base de datos genérica
+09/11/2019 13:36:46	Recopilando usuarios
+09/11/2019 13:36:46	Recopilando roles
+09/11/2019 13:36:46	Recopilando roles de aplicación
+09/11/2019 13:36:46	Recopilando pertenencias a roles
+09/11/2019 13:36:46	Recopilando grupos de archivos
+09/11/2019 13:36:46	Recopilando catálogos de texto completo
+09/11/2019 13:36:46	Recopilando ensamblados
+09/11/2019 13:36:46	Recopilando certificados
+09/11/2019 13:36:46	Recopilando claves asimétricas
+09/11/2019 13:36:46	Recopilando claves simétricas
+09/11/2019 13:36:46	Recopilando claves simétricas cifradas
+09/11/2019 13:36:47	Recopilando esquemas
+09/11/2019 13:36:47	Recopilando colecciones de esquemas XML
+09/11/2019 13:36:47	Recopilando tipos de datos definidos por el usuario
+09/11/2019 13:36:47	Recopilando tipos definidos por el usuario
+09/11/2019 13:36:47	Recopilando tipos de tabla
+09/11/2019 13:36:47	Recopilando claves únicas para tipos de tabla
+09/11/2019 13:36:47	Recopilando claves principales para tipos de tabla
+09/11/2019 13:36:47	Recopilando índices para tipos de tablas
+09/11/2019 13:36:47	Recopilando restricciones CHECK para tipos de tabla
+09/11/2019 13:36:47	Recopilando restricciones DEFAULT para tipos de tabla
+09/11/2019 13:36:47	Recopilando funciones de partición
+09/11/2019 13:36:47	Recopilando esquemas de partición
+09/11/2019 13:36:47	Recopilando funciones
+09/11/2019 13:36:47	Recopilando funciones cifradas
+09/11/2019 13:36:47	Recopilando agregados
+09/11/2019 13:36:47	Recopilando procedimientos
+09/11/2019 13:36:47	Recopilando procedimientos cifrados
+09/11/2019 13:36:47	Recopilando tablas
+09/11/2019 13:36:47	Recopilando claves principales
+09/11/2019 13:36:48	Recopilando restricciones UNIQUE
+09/11/2019 13:36:48	Recopilando claves externas
+09/11/2019 13:36:48	Recopilando restricciones DEFAULT
+09/11/2019 13:36:48	Recopilando restricciones CHECK
+09/11/2019 13:36:48	Recopilando vistas
+09/11/2019 13:36:48	Recopilando vistas cifradas
+09/11/2019 13:36:48	Recopilando índices
+09/11/2019 13:36:48	Recopilando estadísticas
+09/11/2019 13:36:48	Recopilando listas de palabras irrelevantes de índices de texto completo
+09/11/2019 13:36:48	Recopilando listas de propiedades de búsqueda
+09/11/2019 13:36:48	Recopilando propiedades de búsqueda
+09/11/2019 13:36:48	Recopilando índices de texto completo
+09/11/2019 13:36:48	Recopilando índices de almacenamiento de columnas
+09/11/2019 13:36:48	Recopilando índices espaciales
+09/11/2019 13:36:48	Recopilando índices XML
+09/11/2019 13:36:48	Recopilando índices XML selectivos
+09/11/2019 13:36:48	Recopilando desencadenadores cifrados
+09/11/2019 13:36:48	Recopilando desencadenadores
+09/11/2019 13:36:48	Recopilando DDL triggers cifrados y de CLR
+09/11/2019 13:36:48	Recopilando DDL triggers
+09/11/2019 13:36:48	Recopilando sinónimos
+09/11/2019 13:36:48	Recopilando valores predeterminados
+09/11/2019 13:36:48	Recopilando enlaces UDDT de restricción de datos
+09/11/2019 13:36:48	Recopilando reglas
+09/11/2019 13:36:48	Recopilando enlaces UDDT de restricción de datos
+09/11/2019 13:36:48	Recopilando tipos de mensaje
+09/11/2019 13:36:48	Recopilando colas
+09/11/2019 13:36:48	Recopilando contratos
+09/11/2019 13:36:48	Recopilando servicios
+09/11/2019 13:36:48	Recopilando notificaciones de eventos
+09/11/2019 13:36:48	Recopilando enlaces de servicio remoto
+09/11/2019 13:36:48	Recopilando prioridades de Broker
+09/11/2019 13:36:48	Recopilando firmas
+09/11/2019 13:36:48	Recopilando opciones de compresión de datos
+09/11/2019 13:36:48	Recopilando tipos de secuencia
+09/11/2019 13:36:48	Recopilando directivas de seguridad
+09/11/2019 13:36:48	Recopilar claves de cifrado de columna
+09/11/2019 13:36:48	Recopilando claves maestras de columna
+09/11/2019 13:36:48	Recopilando orígenes de datos externos
+09/11/2019 13:36:48	Recopilando formatos de archivo externos
+09/11/2019 13:36:48	Recopilando tablas externas
+09/11/2019 13:36:48	Recopilando permisos de base de datos
+09/11/2019 13:36:48	Recopilando propiedades extendidas
+09/11/2019 13:36:48	Recopilando credenciales
+09/11/2019 13:36:48	Recopilando inicios de sesión
+09/11/2019 13:36:48	Recopilando auditorías de servidor
+09/11/2019 13:36:50	Buscando elementos duplicados en el proyecto
+09/11/2019 13:36:51	Ha finalizado el procesamiento de los elementos duplicados
+09/11/2019 13:36:58	Finalizó la importación de la base de datos.
+09/11/2019 13:36:58	Se guardó un resumen de la importación en la siguiente ubicación: E:\app\prueba39\DatabaseEmpresarios\DatabaseEmpresarios\Registros de importación de esquemas\DatabaseEmpresarios_20191109123637.log
+09/11/2019 13:36:58	Haga clic en Finalizar para continuar...
